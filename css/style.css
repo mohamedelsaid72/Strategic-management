@@ -1,0 +1,317 @@
+/* roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* variables */
+:root {
+    --orang-color: #f27024;
+    --hero-bg-color: #efefef;
+    --blue-color: #00445c;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+/* start of header style */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(120deg, #fff 30%, var(--orang-color) 30%);
+    padding: 8px 80px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+header .logo-img {
+    padding: 10px;
+}
+
+header .logo-text {
+    font-size: 12px;
+    color: #444444;
+    text-transform: capitalize;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+    margin-bottom: 0;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+header ul li a.active {
+    color: #fff;
+    background-color: #ff863f;
+    border-radius: 35px;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff863f;
+    border-radius: 35px;
+}
+
+header ul .close{
+    display: none;
+}
+
+header .toggle {
+    cursor: pointer;
+    font-size: 22px;
+    display: none;
+    color: var(--orang-color);
+}
+/* end of header style */
+
+
+/* start of hero style */
+.hero {
+    width: 100%;
+    background: url(../images/header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero h2 {
+    color: #fff;
+}
+.hero h2 span {
+    color: var(--orang-color);
+    font-weight: bold;
+}
+/* end of header style */
+
+
+/* start of info style */
+.info {
+    background-color: var(--hero-bg-color);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 100%, 50% 90%, 25% 100%, 0 100%);
+}
+
+.info .container{
+    margin-bottom: 60px;
+}
+.info .container .row .col-lg-4 {
+    margin: 20px 0px;
+}
+.info .container .row .col-lg-4 .content{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 60px 14px 0px;
+    margin-top: -50px;
+}
+.info .container .row .col-lg-4 .content h5{
+    color: var(--blue-color);
+    font-weight: 600;
+}
+.info .container .row .col-lg-4 .content p{
+    font-size: 14px;
+    text-align: left !important;
+    word-spacing: 2px;
+}
+
+.info .container .row .col-lg-4 .content p span{
+    display: block;
+    word-spacing: normal;
+}
+.info .container .row .col-lg-4 .content p span::before{
+    /* position: relative; */
+    content: '';
+    height: 8px;
+    width: 8px;
+    background-color: var(--orang-color);
+    border-radius: 50%;
+    display: inline-flex;
+    margin: 0px 6px;
+}
+
+.info .container .row .col-lg-4 .content .btn{
+    background-color: var(--orang-color);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 6px 20px;
+    margin-bottom: -20px;
+}
+.info .container .row .col-lg-4 .content .btn:focus{
+    box-shadow: none !important;
+}
+/* end of info style */
+
+
+/* start of TRAINING style */
+.training .container .row .col-lg-12{
+    margin-bottom: 30px;
+}
+.training .container .row .col-lg-12 h2{
+    color: var(--blue-color);
+    font-weight: bold;
+}
+.training .container .row .col-lg-12 h2 span{
+    color: var(--orang-color);
+}
+.training .container .row .col-lg-12 p span{
+    color: var(--orang-color);
+    font-weight: 500;
+}
+.training .container .row .col-lg-6 {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.training .container .row .col-lg-6 .col-text h5 {
+    color: var(--orang-color);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.training .container .row .col-lg-6 .col-text .READ{
+    padding: 5px 20px;
+    border: 2px solid var(--blue-color);
+    border-radius: 0px;
+    color: var(--blue-color);
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+.training .container .row .col-lg-6 .col-text .READ:hover{
+    background-color: var(--blue-color);
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+/* end of TRAINING style */
+
+
+/* start of LOCATION style */
+.location{
+    width: 100%;
+    text-align: center;
+}
+.location .mark-location{
+    margin-bottom: -28px;
+    z-index: 2;
+    position: relative;
+}
+.map{
+    z-index: 1;
+}
+/* end of LOCATION style */
+
+
+/* start of footer style */
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;justify-content: space-around;
+    background: var(--blue-color);
+    color: #fff;
+}
+footer p{
+    font-size: 12px;
+}
+/* end of footer style */
+
+
+/* resposive design */
+@media (max-width:914px) {
+    header {
+        padding: 12px 20px;
+        z-index: 1000;
+        background: #fff !important;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 50px;
+        background: #fff;
+        transition: 0.4s;
+        z-index: 999;
+    }
+
+    header ul li {
+        padding: 10px 0px;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    header ul li a {
+        color: #111;
+        font-weight: 800;
+    }
+
+    header ul li a:hover{
+        color: var(--orang-color);
+        background-color: #fff !important;
+    }
+
+    .toggle {
+        display: block !important;
+    }
+
+    header ul .close{
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    header ul .close .fa-times:hover {
+        color: var(--orang-color) !important;
+    }
+}
+
+@media (max-width:768px){
+    .info {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 100%, 50% 95%, 25% 100%, 0 100%);
+    }
+}
+@media (max-width:520px) {
+    .training .container .row .col-lg-6 {
+        display: block;
+        text-align: center;
+    }
+}
